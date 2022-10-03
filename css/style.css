@@ -12,9 +12,8 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 .container {
-max-width: 1440px;
-margin: auto;
-
+  max-width: 1440px;
+  margin: auto; 
 }
 
 .navbar {
@@ -22,11 +21,17 @@ margin: auto;
   align-items: center;
   color: white;
   height: 94px;
-  position: relative;
+  position: fixed;
+ 
+ 
   border-bottom: 1px solid rgba(235, 235, 240, 0.2)
+}
+.navbar-light{
+ color: #292d33;
 }
 .header {
   min-height: 100vh;
+ 
 }
 .header-image {
  background-image: url("../img/header-bg.jpg"); 
@@ -34,6 +39,7 @@ margin: auto;
  background-repeat: no-repeat;
  background-position: center;
  position: relative;
+ height: 970px;
 }
 
 .header-image::before {
@@ -64,7 +70,7 @@ margin: auto;
   text-decoration: none;
   font-size: 16px;
   margin-right: 50px;
-  color: inherit;
+  color: white;
 }
 .header-phone {
  flex-shrink: 0; 
@@ -145,3 +151,76 @@ margin: auto;
 .header-features-item:not(:last-child) {
   border-right: none;
 }
+.section {
+  min-width: 150px;
+  margin-bottom: 150px;
+  max-width: 1440px;
+  margin: auto;
+
+}
+.section-title {
+  font-family: 'Bebas Neue';
+  font-size: 60px;
+  line-height: 120%;
+  color: #292D33;
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+.steps-item {
+  max-width: 330px;
+}
+.steps-num {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #5C8EE6;
+  font-family: 'Bebas Neue';
+  display: flex;
+  align-items: center;
+
+}
+.steps-num::after {
+  content: "";
+  height: 1px;
+  background: #EBEBF0;
+  width: 100%;
+ margin-left: 30px;
+}
+.steps-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292D33;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.steps-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828A99;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.steps-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5C8EE6;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+.steps-link::before {
+  content: "";
+  height: 1px;
+  background: #5C8EE6; 
+  width: 40px;
+
+}
+
